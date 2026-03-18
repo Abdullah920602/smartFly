@@ -1,0 +1,193 @@
+/* تصميم مبسط وأنيق للرحلات */
+
+.flights-page {
+  background: var(--soft-gradient);
+  min-height: 100vh;
+  padding: 0;
+}
+
+.flights-header {
+  background: var(--primary-gradient);
+  color: var(--jordan-white);
+  padding: 40px 0;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flights-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="plane" patternUnits="userSpaceOnUse" width="100" height="100"><path d="M20,50 L80,50 M50,20 L50,80" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23plane)"/></svg>');
+  opacity: 0.1;
+}
+
+.flights-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.flights-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* بحث مبسط */
+.simple-search-container:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--hover-shadow);
+}
+
+.input-group .form-control:focus {
+  border-color: var(--jordan-gold);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+/* فلاتر سريعة */
+.quick-filters {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.quick-filters .form-select {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  transition: var(--smooth-transition);
+  background: var(--jordan-white);
+}
+
+.quick-filters .form-select:focus {
+  border-color: var(--jordan-gold);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+  transform: translateY(-1px);
+}
+
+/* قائمة الرحلات */
+.flights-list {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.simple-flight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--hover-shadow);
+  border-color: var(--jordan-gold);
+}
+
+/* حالة التحميل */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.loading-container .spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 4px;
+  color: var(--jordan-gold);
+}
+
+.loading-container p {
+  color: var(--jordan-stone);
+  font-size: 1.1rem;
+  margin-top: 16px;
+}
+
+/* حالة عدم وجود نتائج */
+.no-results {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--jordan-white);
+  border-radius: 20px;
+  box-shadow: var(--soft-shadow);
+  margin: 32px 0;
+}
+
+.no-results .fa-plane-slash {
+  color: var(--jordan-stone);
+  opacity: 0.5;
+}
+
+.no-results h4 {
+  color: var(--jordan-royal);
+  margin: 24px 0 16px;
+}
+
+.no-results p {
+  color: var(--jordan-stone);
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+/* تحسين responsive */
+@media (max-width: 768px) {
+  .flights-header {
+    padding: 24px 0;
+    text-align: center;
+  }
+  
+  .flights-header h1 {
+    font-size: 2rem;
+  }
+  
+  .simple-search-container {
+    padding: 16px;
+  }
+  
+  .quick-filters {
+    padding: 16px;
+  }
+  
+  .quick-filters .row {
+    gap: 8px;
+  }
+  
+  .simple-flight-card {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+/* تأثيرات الحركة */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* تحسين الأزرار في البطاقات */
+.simple-flight-card .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* تحسين النصوص */
+.results-header h4 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* تحسين الشارات */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}

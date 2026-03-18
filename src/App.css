@@ -1,0 +1,177 @@
+/* =====================
+   القاعدة الأساسية
+===================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: ltr;
+  text-align: left;
+  background: linear-gradient(135deg, #e8f4f8 0%, #f0f8f0 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.main-content {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+/* =====================
+   Navbar Styling
+===================== */
+.navbar {
+  background: rgba(26, 54, 93, 0.95) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(26, 54, 93, 0.1);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  z-index: 1001;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-brand i {
+  color: #d4af37;
+  font-size: 1.6rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: rgba(255,255,255,0.9) !important;
+  margin: 0 8px;
+  padding: 10px 16px !important;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  background: rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.nav-link.active {
+  background: rgba(212, 175, 55, 0.3);
+  color: #fff !important;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
+}
+
+/* تفعيل أيقونة الموبايل */
+.navbar-toggler {
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(255,255,255,0.25);
+}
+
+/* =====================
+   Button Styling
+===================== */
+.btn {
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer; /* مهم */
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #5a9a9c 0%, #7bb3b5 100%);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #7ba05b 0%, #9bc472 100%);
+}
+
+.btn-outline-primary {
+  border: 2px solid #5a9a9c;
+  color: #5a9a9c;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #5a9a9c 0%, #7bb3b5 100%);
+  border-color: transparent;
+  color: white;
+}
+
+/* =====================
+   BG Colors (مع الاحتفاظ بوظائف Bootstrap)
+===================== */
+.bg-primary {
+  background: linear-gradient(135deg, #5a9a9c 0%, #7bb3b5 100%) !important;
+  color: white !important;
+}
+
+.bg-success {
+  background: linear-gradient(135deg, #7ba05b 0%, #9bc472 100%) !important;
+  color: white !important;
+}
+
+.bg-info {
+  background: linear-gradient(135deg, #6ba3c7 0%, #8bb5d1 100%) !important;
+  color: white !important;
+}
+
+.bg-warning {
+  background: linear-gradient(135deg, #d4a574 0%, #e6b885 100%) !important;
+  color: white !important;
+}
+
+.bg-danger {
+  background: linear-gradient(135deg, #c47a7a 0%, #d49090 100%) !important;
+  color: white !important;
+}
+
+/* =====================
+   Main Content Layout
+===================== */
+.main-content {
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* تحسين التخطيط للشاشات المختلفة */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    padding: 0;
+  }
+}
+
