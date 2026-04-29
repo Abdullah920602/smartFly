@@ -10,7 +10,7 @@
 }
 
 .auth-card {
-  background: var(--jordan-white);
+  background: var(--pure-white);
   border-radius: 20px;
   box-shadow: var(--card-shadow);
   padding: 40px;
@@ -54,7 +54,7 @@
 }
 
 .auth-header p {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 1rem;
   margin: 0;
   opacity: 0.8;
@@ -83,11 +83,11 @@
 .form-group input,
 .form-group select {
   padding: 0.75rem;
-  border: 2px solid var(--light-gray);
+  border: 2px solid rgba(255, 215, 0, 0.2);
   border-radius: 8px;
   font-size: 1rem;
   transition: var(--smooth-transition);
-  background: var(--jordan-white);
+  background: var(--pure-white);
   color: #212529;
   width: 100%;
 }
@@ -96,12 +96,12 @@
 .form-group select:focus {
   outline: none;
   border-color: var(--accent-gold);
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
   transform: translateY(-1px);
 }
 
 .form-group input::placeholder {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.5);
   opacity: 0.6;
 }
 
@@ -142,8 +142,8 @@
 }
 
 .example-data-helper {
-  background: rgba(245, 158, 11, 0.05);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 10px;
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -152,7 +152,7 @@
 
 .example-btn {
   background: var(--accent-gold);
-  color: var(--jordan-white);
+  color: var(--primary-navy);
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -167,13 +167,13 @@
 }
 
 .example-btn:hover {
-  background: #d97706;
+  background: rgba(255, 215, 0, 0.8);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
 }
 
 .example-text {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 0.85rem;
   margin: 0;
   opacity: 0.8;
@@ -202,7 +202,7 @@
 
 .btn-primary {
   background: var(--primary-gradient);
-  color: var(--jordan-white);
+  color: var(--pure-white);
   border: 1px solid var(--primary-navy);
 }
 
@@ -226,7 +226,7 @@
 
 .btn-secondary:hover {
   background: var(--primary-navy);
-  color: var(--jordan-white);
+  color: var(--pure-white);
   transform: translateY(-2px);
 }
 
@@ -234,11 +234,11 @@
   margin-top: 2rem;
   text-align: center;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--light-gray);
+  border-top: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 .auth-footer p {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 0.9rem;
   margin: 0.5rem 0;
 }
@@ -256,11 +256,11 @@
 }
 
 .error-message {
-  background: rgba(239, 68, 68, 0.1);
-  color: var(--danger);
+  background: rgba(15, 23, 42, 0.1);
+  color: var(--primary-navy);
   padding: 0.75rem;
   border-radius: 8px;
-  border: 1px solid var(--danger);
+  border: 1px solid var(--accent-gold);
   font-size: 0.9rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -274,11 +274,11 @@
 }
 
 .success-message {
-  background: rgba(34, 197, 94, 0.1);
-  color: var(--success);
+  background: rgba(255, 215, 0, 0.1);
+  color: var(--primary-navy);
   padding: 0.75rem;
   border-radius: 8px;
-  border: 1px solid var(--success);
+  border: 1px solid var(--accent-gold);
   font-size: 0.9rem;
   text-align: center;
   margin-bottom: 1rem;

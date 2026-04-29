@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getFlights } from '../services/firebaseService';
 import '../styles/pages/FlightDetails.css';
+import { sampleFlights } from '../utils/sampleData.js';
 
 const FlightDetails = () => {
   const { flightId } = useParams();
@@ -28,8 +29,16 @@ const FlightDetails = () => {
   const fetchFlightDetails = async () => {
     try {
       setLoading(true);
-      const flights = await getFlights();
-      const foundFlight = flights.find(f => f.id === flightId);
+      // Use same sample flights data as Home.js and Flights.js for consistency
+      console.log('Loading sample flights for flight details...');
+      console.log('Looking for flight ID:', flightId);
+      console.log('Sample flights available:', sampleFlights.length);
+      
+      // Find flight by index (since sampleFlights doesn't have unique IDs)
+      const flightIndex = parseInt(flightId);
+      const foundFlight = sampleFlights[flightIndex];
+      
+      console.log('Found flight:', foundFlight);
       setFlight(foundFlight);
     } catch (error) {
       console.error('خطأ في جلب تفاصيل الرحلة:', error);
@@ -231,7 +240,7 @@ const FlightDetails = () => {
                   <i className="fas fa-suitcase"></i>
                   <div>
                     <strong>الأمتعة</strong>
-                    <p>23 كيلو مجاناً</p>
+                    <p>10 كيلو مجاناً</p>
                   </div>
                 </div>
                 

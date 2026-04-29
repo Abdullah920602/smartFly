@@ -17,14 +17,14 @@ export const FIREBASE_CONFIG = {
 
 // ثوابت الألوان
 export const COLORS = {
-  PRIMARY: '#5a9a9c',
-  SECONDARY: '#7bb3b5',
-  SUCCESS: '#7ba05b',
-  WARNING: '#d4a574',
-  DANGER: '#c47a7a',
-  INFO: '#6ba3c7',
-  LIGHT: '#f0f8f0',
-  DARK: '#2c3e50'
+  PRIMARY: '#0F172A',
+  SECONDARY: '#FFD700',
+  SUCCESS: '#FFD700',
+  WARNING: '#FFD700',
+  DANGER: 'rgba(15, 23, 42, 0.8)',
+  INFO: '#0F172A',
+  LIGHT: '#ffffff',
+  DARK: '#0F172A'
 };
 
 // ثوابت شركات الطيران

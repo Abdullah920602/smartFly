@@ -1,7 +1,7 @@
 /* Flight Details Page Styles */
 .flight-details-page {
   min-height: 100vh;
-  background: var(--jordan-cream);
+  background: #ffffff;
 }
 
 .flight-details-loading {
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   min-height: 60vh;
-  color: var(--jordan-royal);
+  color: #0F172A;
 }
 
 .flight-details-header {
@@ -26,15 +26,15 @@
 }
 
 .flight-details-header .btn-link:hover {
-  color: var(--jordan-gold);
+  color: #FFD700;
 }
 
 /* Flight Info Card */
 .flight-info-card {
-  background: var(--jordan-white);
+  background: #ffffff;
   border-radius: 20px;
   padding: 32px;
-  box-shadow: var(--soft-shadow);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
   margin-bottom: 24px;
 }
 
@@ -44,7 +44,7 @@
   justify-content: space-between;
   margin-bottom: 32px;
   padding: 24px;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 16px;
   position: relative;
 }
@@ -55,21 +55,21 @@
 }
 
 .route-point .city-info h4 {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 8px;
 }
 
 .route-point .time {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .route-point .date {
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 14px;
 }
 
@@ -88,14 +88,14 @@
   left: -32px;
   right: -32px;
   height: 2px;
-  background: linear-gradient(90deg, var(--jordan-royal) 0%, var(--jordan-gold) 50%, var(--jordan-royal) 100%);
+  background: linear-gradient(90deg, #0F172A 0%, #FFD700 50%, #0F172A 100%);
   transform: translateY(-50%);
   z-index: 1;
 }
 
 .plane-icon {
-  background: var(--jordan-gold);
-  color: var(--jordan-white);
+  background: #FFD700;
+  color: #ffffff;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -117,12 +117,12 @@
 
 .duration small {
   display: block;
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 12px;
 }
 
 .duration strong {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-size: 14px;
 }
 
@@ -138,13 +138,13 @@
   display: flex;
   align-items: center;
   padding: 16px;
-  background: var(--jordan-cream);
+  background: rgba(255, 215, 0, 0.05);
   border-radius: 12px;
-  border-left: 4px solid var(--jordan-gold);
+  border-left: 4px solid #FFD700;
 }
 
 .detail-item i {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-size: 20px;
   margin-left: 16px;
   width: 24px;
@@ -152,24 +152,24 @@
 }
 
 .detail-item strong {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-size: 14px;
   display: block;
   margin-bottom: 4px;
 }
 
 .detail-item p {
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
   margin: 0;
   font-size: 14px;
 }
 
 /* Booking Card */
 .booking-card {
-  background: var(--jordan-white);
+  background: #ffffff;
   border-radius: 20px;
   padding: 24px;
-  box-shadow: var(--soft-shadow);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
   position: sticky;
   top: 24px;
 }
@@ -177,12 +177,12 @@
 .booking-header {
   text-align: center;
   padding-bottom: 20px;
-  border-bottom: 2px solid var(--jordan-cream);
+  border-bottom: 2px solid rgba(255, 215, 0, 0.05);
   margin-bottom: 24px;
 }
 
 .booking-header h5 {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -197,31 +197,31 @@
 .price .amount {
   font-size: 32px;
   font-weight: 700;
-  color: var(--jordan-gold);
+  color: #FFD700;
 }
 
 .price .currency {
   font-size: 16px;
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
 }
 
 /* Booking Steps */
 .booking-step h6 {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-weight: 600;
   margin-bottom: 16px;
 }
 
 .passenger-form .form-control {
-  border: 2px solid #e2e8f0;
+  border: 2px solid rgba(255, 215, 0, 0.2);
   border-radius: 8px;
   padding: 12px;
   font-size: 14px;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .passenger-form .form-control:focus {
-  border-color: var(--jordan-royal);
+  border-color: #0F172A;
   box-shadow: 0 0 0 0.2rem rgba(26, 54, 93, 0.1);
 }
 
@@ -232,15 +232,15 @@
   gap: 8px;
   margin-bottom: 16px;
   padding: 16px;
-  background: var(--jordan-cream);
+  background: rgba(255, 215, 0, 0.05);
   border-radius: 12px;
 }
 
 .seat {
   width: 40px;
   height: 40px;
-  border: 2px solid #cbd5e0;
-  background: var(--jordan-white);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  background: #ffffff;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -248,23 +248,23 @@
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .seat:hover {
-  border-color: var(--jordan-royal);
-  background: var(--jordan-cream);
+  border-color: #0F172A;
+  background: rgba(255, 215, 0, 0.05);
 }
 
 .seat.selected {
-  background: var(--jordan-royal);
-  color: var(--jordan-white);
-  border-color: var(--jordan-royal);
+  background: #0F172A;
+  color: #ffffff;
+  border-color: #0F172A;
 }
 
 .seat.occupied {
-  background: #e2e8f0;
-  color: #94a3b8;
+  background: rgba(255, 215, 0, 0.2);
+  color: rgba(15, 23, 42, 0.5);
   cursor: not-allowed;
 }
 
@@ -288,7 +288,7 @@
 
 /* Booking Summary */
 .booking-summary {
-  background: var(--jordan-cream);
+  background: rgba(255, 215, 0, 0.05);
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
@@ -305,12 +305,12 @@
 .summary-item:last-child {
   border-bottom: none;
   font-weight: 600;
-  color: var(--jordan-royal);
+  color: #0F172A;
 }
 
 /* Payment Info */
 .payment-info h6 {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -323,17 +323,17 @@
 .payment-method {
   flex: 1;
   padding: 12px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid rgba(255, 215, 0, 0.2);
   border-radius: 8px;
   text-align: center;
   cursor: pointer;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .payment-method.active {
-  border-color: var(--jordan-royal);
-  background: var(--jordan-cream);
-  color: var(--jordan-royal);
+  border-color: #0F172A;
+  background: rgba(255, 215, 0, 0.05);
+  color: #0F172A;
 }
 
 .payment-method i {
@@ -360,7 +360,7 @@
 .booking-progress {
   margin-top: 24px;
   padding-top: 20px;
-  border-top: 2px solid var(--jordan-cream);
+  border-top: 2px solid rgba(255, 215, 0, 0.05);
 }
 
 .progress-steps {
@@ -376,7 +376,7 @@
   left: 20px;
   right: 20px;
   height: 2px;
-  background: #e2e8f0;
+  background: rgba(255, 215, 0, 0.2);
   z-index: 1;
 }
 
@@ -392,63 +392,63 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #e2e8f0;
-  color: #94a3b8;
+  background: rgba(255, 215, 0, 0.2);
+  color: rgba(15, 23, 42, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   margin-bottom: 8px;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .step.active span {
-  background: var(--jordan-royal);
-  color: var(--jordan-white);
+  background: #0F172A;
+  color: #ffffff;
 }
 
 .step small {
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 12px;
 }
 
 .step.active small {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-weight: 600;
 }
 
 /* Booking Confirmation */
 .booking-confirmation {
   min-height: 100vh;
-  background: var(--jordan-cream);
+  background: rgba(255, 215, 0, 0.05);
   display: flex;
   align-items: center;
 }
 
 .confirmation-card {
-  background: var(--jordan-white);
+  background: #ffffff;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: var(--soft-shadow);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
   max-width: 600px;
   margin: 0 auto;
 }
 
 .booking-summary h5 {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-weight: 600;
   margin-bottom: 16px;
 }
 
 .summary-details {
-  background: var(--jordan-cream);
+  background: rgba(255, 215, 0, 0.05);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 24px;
 }
 
 .summary-details strong {
-  color: var(--jordan-royal);
+  color: #0F172A;
 }
 
 /* Responsive Design */
@@ -515,5 +515,5 @@
   min-height: 60vh;
   display: flex;
   align-items: center;
-  background: var(--jordan-cream);
+  background: rgba(255, 215, 0, 0.05);
 }

@@ -8,11 +8,11 @@
 .data-manager-header {
   text-align: center;
   margin-bottom: 30px;
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--soft-blue) 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1a2f4a 100%);
   color: white;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
 .data-manager-header h1 {
@@ -49,23 +49,23 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--soft-blue) 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1a2f4a 100%);
   color: white;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(90, 154, 156, 0.4);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.4);
 }
 
 .btn-danger {
-  background: linear-gradient(135deg, #c47a7a 0%, #d49090 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(26, 47, 74, 0.8) 100%);
   color: white;
 }
 
 .btn-danger:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(196, 122, 122, 0.4);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.4);
 }
 
 .btn:disabled {
@@ -84,12 +84,12 @@
 }
 
 .message.success {
-  background: linear-gradient(135deg, #7ba05b 0%, #9bc472 100%);
-  color: white;
+  background: linear-gradient(135deg, #FFD700 0%, #ffed4e 100%);
+  color: #0F172A;
 }
 
 .message.error {
-  background: linear-gradient(135deg, #c47a7a 0%, #d49090 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(26, 47, 74, 0.8) 100%);
   color: white;
 }
 
@@ -115,7 +115,7 @@
 
 .stat-card h3 {
   margin: 0 0 15px 0;
-  color: #333;
+  color: #0F172A;
   font-size: 1.2rem;
 }
 
@@ -123,7 +123,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--soft-blue) 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1a2f4a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -138,7 +138,7 @@
 
 .flights-list h2 {
   margin: 0 0 25px 0;
-  color: #333;
+  color: #0F172A;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -147,13 +147,13 @@
   text-align: center;
   padding: 40px;
   font-size: 1.2rem;
-  color: #666;
+  color: rgba(15, 23, 42, 0.7);
 }
 
 .no-flights {
   text-align: center;
   padding: 40px;
-  color: #666;
+  color: rgba(15, 23, 42, 0.7);
 }
 
 .no-flights p {
@@ -168,18 +168,18 @@
 }
 
 .flight-card {
-  background: var(--light-gray);
+  background: rgba(255, 215, 0, 0.05);
   border-radius: 12px;
   padding: 20px;
-  border: 2px solid #e9ecef;
+  border: 2px solid rgba(255, 215, 0, 0.2);
   transition: all 0.3s ease;
   position: relative;
 }
 
 .flight-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-navy);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.1);
+  border-color: #0F172A;
 }
 
 .flight-header {
@@ -188,18 +188,18 @@
   align-items: center;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e9ecef;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.2);
 }
 
 .flight-header h3 {
   margin: 0;
-  color: #333;
+  color: #0F172A;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .delete-btn {
-  background: #c47a7a;
+  background: rgba(15, 23, 42, 0.8);
   color: white;
   border: none;
   border-radius: 50%;
@@ -214,18 +214,18 @@
 }
 
 .delete-btn:hover {
-  background: #d49090;
+  background: rgba(26, 47, 74, 0.8);
   transform: scale(1.1);
 }
 
 .flight-info p {
   margin: 8px 0;
-  color: #555;
+  color: rgba(15, 23, 42, 0.7);
   font-size: 0.95rem;
 }
 
 .flight-info strong {
-  color: #333;
+  color: #0F172A;
   font-weight: 600;
 }
 

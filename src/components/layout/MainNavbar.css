@@ -6,7 +6,7 @@
   padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -28,13 +28,13 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--accent-gold);
+  background: #FFD700;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--jordan-white);
+  color: #ffffff;
   font-size: 1.1rem;
-  box-shadow: var(--soft-shadow);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
 }
 
 .user-info {
@@ -45,7 +45,7 @@
 }
 
 .user-name {
-  color: var(--jordan-white);
+  color: #ffffff;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -53,12 +53,12 @@
 .logout-btn {
   background: transparent;
   border: none;
-  color: var(--jordan-white);
+  color: #ffffff;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.85rem;
   cursor: pointer;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -74,15 +74,15 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background: var(--jordan-white);
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: var(--card-shadow);
+  box-shadow: 0 12px 48px rgba(15, 23, 42, 0.2);
   min-width: 200px;
   padding: 0.5rem 0;
   margin-top: 0.5rem;
   z-index: 1000;
   animation: slideInDown 0.3s ease-out;
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 @keyframes slideInDown {
@@ -100,39 +100,39 @@
   display: block;
   width: 100%;
   padding: 0.75rem 1rem;
-  color: var(--primary-navy);
+  color: #0F172A;
   text-decoration: none;
   border-radius: 8px;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 0.9rem;
 }
 
 .dropdown-item:hover {
-  background: var(--light-gray);
-  color: var(--accent-gold);
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
   transform: translateX(5px);
 }
 
 .dropdown-item.logout-btn {
   background: transparent;
   border: none;
-  color: var(--danger);
+  color: rgba(15, 23, 42, 0.8);
   cursor: pointer;
   width: 100%;
   text-align: right;
   padding: 0.75rem 1rem;
   border-radius: 8px;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dropdown-item.logout-btn:hover {
   background: #fee;
-  color: var(--danger);
+  color: rgba(15, 23, 42, 0.8);
 }
 
 .dropdown-item i {
-  color: var(--accent-gold);
+  color: #FFD700;
   margin-left: 0.5rem;
 }
 

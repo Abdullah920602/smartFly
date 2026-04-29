@@ -18,46 +18,33 @@ const AiSearchBox = ({ aiSearchTerm, setAiSearchTerm, handleAiSearch, isAiSearch
         onChange={e => setAiSearchTerm(e.target.value)}
         onKeyPress={e => e.key === 'Enter' && handleAiSearch()}
       />
-      <button
-        className="btn btn-outline-light voice-search-btn"
-        onClick={startVoiceSearch}
-        disabled={isRecording || !voiceSearchSupported}
-        title={voiceSearchSupported ? "البحث الصوتي" : "البحث الصوتي غير متاح في هذا المتصفح"}
-      >
-        {isRecording ? (
-          <>
-            <span className="spinner-border spinner-border-sm me-2"></span>
-            جاري التسجيل...
-          </>
-        ) : !voiceSearchSupported ? (
-          <>
-            <i className="fas fa-microphone-slash me-2"></i>
-            صوت غير متاح
-          </>
-        ) : (
-          <>
-            <i className="fas fa-microphone me-2"></i>
-            صوت
-          </>
-        )}
-      </button>
-      <button
-        className="btn btn-primary"
-        onClick={handleAiSearch}
-        disabled={isAiSearching || !aiSearchTerm.trim()}
-      >
-        {isAiSearching ? (
-          <>
-            <span className="spinner-border spinner-border-sm me-2"></span>
-            جاري البحث...
-          </>
-        ) : (
-          <>
-            <i className="fas fa-search me-2"></i>
-            بحث ذكي
-          </>
-        )}
-      </button>
+      <div className="action-buttons">
+        <button
+          className="btn btn-outline-light voice-search-btn"
+          onClick={startVoiceSearch}
+          disabled={isRecording || !voiceSearchSupported}
+          title={voiceSearchSupported ? "البحث الصوتي" : "البحث الصوتي غير متاح في هذا المتصفح"}
+        >
+          {isRecording ? (
+            <i className="fas fa-stop"></i>
+          ) : !voiceSearchSupported ? (
+            <i className="fas fa-microphone-slash"></i>
+          ) : (
+            <i className="fas fa-microphone"></i>
+          )}
+        </button>
+        <button
+          className="btn btn-primary"
+          onClick={handleAiSearch}
+          disabled={isAiSearching || !aiSearchTerm.trim()}
+        >
+          {isAiSearching ? (
+            <i className="fas fa-spinner fa-spin"></i>
+          ) : (
+            <i className="fas fa-search"></i>
+          )}
+        </button>
+      </div>
     </div>
   </div>
 );

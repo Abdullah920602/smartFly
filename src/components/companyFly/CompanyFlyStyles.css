@@ -2,23 +2,17 @@
 
 /* ====== ROOT VARIABLES ====== */
 :root {
-  --primary-navy: #0f172a;
-  --accent-gold: #f59e0b;
-  --soft-blue: #3b82f6;
-  --jordan-white: #ffffff;
-  --light-gray: #f1f5f9;
-  --dark-gray: #475569;
-  --danger: #ef4444;
-  --success: #22c55e;
-  --warning: #eab308;
+  --primary-navy: #0F172A;
+  --accent-gold: #FFD700;
+  --pure-white: #ffffff;
   
-  --primary-gradient: linear-gradient(135deg, var(--primary-navy) 0%, var(--soft-blue) 100%);
-  --secondary-gradient: linear-gradient(135deg, var(--accent-gold) 0%, #fbbf24 100%);
-  --soft-gradient: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+  --primary-gradient: linear-gradient(135deg, #0F172A 0%, #1a2f4a 100%);
+  --secondary-gradient: linear-gradient(135deg, #FFD700 0%, #ffed4e 100%);
+  --soft-gradient: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   
-  --card-shadow: 0 12px 48px rgba(26, 54, 93, 0.15);
-  --soft-shadow: 0 8px 32px rgba(26, 54, 93, 0.1);
-  --hover-shadow: 0 16px 64px rgba(26, 54, 93, 0.2);
+  --card-shadow: 0 12px 48px rgba(15, 23, 42, 0.2);
+  --soft-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
+  --hover-shadow: 0 16px 64px rgba(15, 23, 42, 0.25);
   --smooth-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -33,7 +27,7 @@
 }
 
 .companyfly-dashboard.light-mode {
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+  background: var(--soft-gradient);
 }
 
 .dashboard-content {
@@ -47,10 +41,10 @@
   align-items: center;
   margin: 0 2rem 2rem 2rem;
   padding: 1.5rem;
-  background: var(--jordan-white);
+  background: var(--pure-white);
   border-radius: 15px;
   box-shadow: var(--card-shadow);
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.2);
   transition: var(--smooth-transition);
 }
 
@@ -68,7 +62,7 @@
 
 .btn-create {
   background: var(--primary-gradient);
-  color: var(--jordan-white);
+  color: var(--pure-white);
   border: none;
   padding: 12px 24px;
   border-radius: 12px;
@@ -93,11 +87,11 @@
   display: flex;
   gap: 1rem;
   margin: 0 2rem 2rem 2rem;
-  background: var(--jordan-white);
+  background: var(--pure-white);
   padding: 0.5rem;
   border-radius: 15px;
   box-shadow: var(--soft-shadow);
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 .tab-btn {
@@ -108,7 +102,7 @@
   border-radius: 10px;
   cursor: pointer;
   font-weight: 500;
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   transition: var(--smooth-transition);
   display: flex;
   align-items: center;
@@ -118,14 +112,14 @@
 
 .tab-btn.active {
   background: var(--primary-gradient);
-  color: var(--jordan-white);
+  color: var(--pure-white);
   box-shadow: var(--soft-shadow);
   border: 1px solid var(--accent-gold);
 }
 
 .tab-btn:hover:not(.active) {
   color: var(--primary-navy);
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(255, 215, 0, 0.1);
   border-color: var(--accent-gold);
 }
 
@@ -136,7 +130,7 @@
 }
 
 .tab-btn.active i {
-  color: var(--jordan-white);
+  color: var(--pure-white);
 }
 
 /* ====== STATS ====== */
@@ -148,7 +142,7 @@
 }
 
 .stat-card {
-  background: var(--jordan-white);
+  background: var(--pure-white);
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: var(--card-shadow);
@@ -156,7 +150,7 @@
   align-items: center;
   gap: 1rem;
   transition: var(--smooth-transition);
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .stat-card:hover {
@@ -174,7 +168,7 @@
   justify-content: center;
   font-size: 1.5rem;
   background: var(--primary-gradient);
-  color: var(--jordan-white);
+  color: var(--pure-white);
   box-shadow: var(--soft-shadow);
   border: 1px solid var(--accent-gold);
 }
@@ -187,7 +181,7 @@
 }
 
 .stat-info p {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   margin: 0;
   font-size: 0.9rem;
 }
@@ -201,12 +195,12 @@
 }
 
 .flight-card {
-  background: var(--jordan-white);
+  background: var(--pure-white);
   border-radius: 15px;
   padding: 1.5rem;
   box-shadow: var(--card-shadow);
   transition: var(--smooth-transition);
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .flight-card:hover {
@@ -230,7 +224,7 @@
 }
 
 .flight-info p {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   margin: 0;
   font-size: 0.9rem;
 }
@@ -241,7 +235,7 @@
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .flight-route {
@@ -250,9 +244,9 @@
   justify-content: space-between;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: var(--light-gray);
+  background: rgba(255, 215, 0, 0.1);
   border-radius: 10px;
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .route-point {
@@ -267,7 +261,7 @@
 }
 
 .route-point p {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   margin: 0;
   font-size: 0.9rem;
 }
@@ -289,13 +283,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  background: var(--light-gray);
+  background: rgba(255, 215, 0, 0.1);
   border-radius: 8px;
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .detail-item .label {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -318,26 +312,26 @@
 }
 
 .seats-info .available {
-  color: var(--soft-blue);
+  color: var(--accent-gold);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .seats-info .total {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
 }
 
 .seats-info .label {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 0.9rem;
 }
 
 .seats-progress {
   height: 8px;
-  background: var(--light-gray);
+  background: rgba(255, 215, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .progress-bar {
@@ -376,9 +370,9 @@
 }
 
 .btn-edit {
-  background: var(--soft-blue);
-  color: var(--jordan-white);
-  border: 1px solid var(--soft-blue);
+  background: var(--accent-gold);
+  color: var(--pure-white);
+  border: 1px solid var(--accent-gold);
 }
 
 .btn-edit:hover {
@@ -388,9 +382,9 @@
 }
 
 .btn-delete {
-  background: var(--danger);
-  color: var(--jordan-white);
-  border: 1px solid var(--danger);
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--pure-white);
+  border: 1px solid rgba(15, 23, 42, 0.8);
 }
 
 .btn-delete:hover {
@@ -411,11 +405,11 @@
 }
 
 .chart-container {
-  background: var(--jordan-white);
+  background: var(--pure-white);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: var(--card-shadow);
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .chart-container h3 {
@@ -444,20 +438,20 @@
   align-items: center;
   gap: 1rem;
   padding: 0.75rem;
-  background: var(--light-gray);
+  background: rgba(255, 215, 0, 0.1);
   border-radius: 8px;
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .chart-color {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .chart-color.scheduled {
-  background: var(--soft-blue);
+  background: var(--accent-gold);
 }
 
 .chart-color.boarding {
@@ -465,11 +459,11 @@
 }
 
 .chart-color.departed {
-  background: var(--success);
+  background: var(--accent-gold);
 }
 
 .chart-color.cancelled {
-  background: var(--danger);
+  background: rgba(15, 23, 42, 0.8);
 }
 
 .revenue-summary {
@@ -484,13 +478,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: var(--light-gray);
+  background: rgba(255, 215, 0, 0.1);
   border-radius: 8px;
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .revenue-item .label {
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   font-weight: 500;
 }
 
@@ -516,7 +510,7 @@
 }
 
 .modal-content {
-  background: var(--jordan-white);
+  background: var(--pure-white);
   border-radius: 20px;
   padding: 2rem;
   width: 90%;
@@ -525,7 +519,7 @@
   overflow-y: auto;
   box-shadow: var(--card-shadow);
   animation: slideInUp 0.3s ease-out;
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 @keyframes slideInUp {
@@ -545,7 +539,7 @@
   align-items: center;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .modal-header h2 {
@@ -559,7 +553,7 @@
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: var(--dark-gray);
+  color: rgba(15, 23, 42, 0.7);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 8px;
@@ -567,8 +561,8 @@
 }
 
 .btn-close:hover {
-  background: var(--light-gray);
-  color: var(--danger);
+  background: rgba(255, 215, 0, 0.1);
+  color: rgba(15, 23, 42, 0.8);
 }
 
 .flight-form {
@@ -598,11 +592,11 @@
 .form-group input,
 .form-group select {
   padding: 0.75rem;
-  border: 2px solid var(--light-gray);
+  border: 2px solid rgba(255, 215, 0, 0.1);
   border-radius: 8px;
   font-size: 1rem;
   transition: var(--smooth-transition);
-  background: var(--jordan-white);
+  background: var(--pure-white);
   color: #0f172a;
 }
 
@@ -619,7 +613,7 @@
   justify-content: flex-end;
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--light-gray);
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .btn-cancel, .btn-submit {
@@ -632,19 +626,19 @@
 }
 
 .btn-cancel {
-  background: var(--light-gray);
-  color: var(--dark-gray);
-  border: 1px solid var(--light-gray);
+  background: rgba(255, 215, 0, 0.1);
+  color: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .btn-cancel:hover {
-  background: var(--dark-gray);
-  color: var(--jordan-white);
+  background: rgba(15, 23, 42, 0.7);
+  color: var(--pure-white);
 }
 
 .btn-submit {
   background: var(--primary-gradient);
-  color: var(--jordan-white);
+  color: var(--pure-white);
   border: 1px solid var(--primary-navy);
 }
 
@@ -665,7 +659,7 @@
 }
 
 .companyfly-navbar .navbar-brand {
-  color: var(--jordan-white) !important;
+  color: var(--pure-white) !important;
   font-size: 1.5rem !important;
   font-weight: bold;
 }
@@ -675,7 +669,7 @@
 }
 
 .companyfly-navbar .nav-link {
-  color: var(--jordan-white) !important;
+  color: var(--pure-white) !important;
   transition: var(--smooth-transition) !important;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -696,7 +690,7 @@
 .theme-toggle-btn {
   background: transparent !important;
   border: 1px solid var(--accent-gold) !important;
-  color: var(--jordan-white) !important;
+  color: var(--pure-white) !important;
   padding: 0.5rem 1rem !important;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -733,10 +727,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--jordan-white);
+  color: var(--pure-white);
   font-size: 1.1rem;
   box-shadow: var(--soft-shadow);
-  border: 1px solid var(--jordan-white);
+  border: 1px solid var(--pure-white);
 }
 
 .user-info {
@@ -747,7 +741,7 @@
 }
 
 .user-name {
-  color: var(--jordan-white);
+  color: var(--pure-white);
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -755,7 +749,7 @@
 .logout-btn {
   background: transparent;
   border: none;
-  color: var(--jordan-white);
+  color: var(--pure-white);
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.85rem;
@@ -775,7 +769,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background: var(--jordan-white);
+  background: var(--pure-white);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
   min-width: 200px;
@@ -783,7 +777,7 @@
   margin-top: 0.5rem;
   z-index: 1000;
   animation: slideInDown 0.3s ease-out;
-  border: 1px solid var(--light-gray);
+  border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 @keyframes slideInDown {
@@ -811,7 +805,7 @@
 }
 
 .dropdown-item:hover {
-  background: var(--light-gray);
+  background: rgba(255, 215, 0, 0.1);
   color: var(--accent-gold);
   transform: translateX(5px);
   border-color: var(--accent-gold);
@@ -820,7 +814,7 @@
 .dropdown-item.logout-btn {
   background: transparent;
   border: none;
-  color: var(--danger);
+  color: rgba(15, 23, 42, 0.8);
   cursor: pointer;
   width: 100%;
   text-align: right;
@@ -831,7 +825,7 @@
 
 .dropdown-item.logout-btn:hover {
   background: #fee;
-  color: var(--danger);
+  color: rgba(15, 23, 42, 0.8);
 }
 
 .dropdown-item i {
@@ -967,24 +961,24 @@
 /* ====== UTILITY CLASSES ====== */
 .text-primary { color: var(--primary-navy); }
 .text-accent { color: var(--accent-gold); }
-.text-white { color: var(--jordan-white); }
-.text-gray { color: var(--dark-gray); }
-.text-success { color: var(--success); }
-.text-danger { color: var(--danger); }
-.text-warning { color: var(--warning); }
+.text-white { color: var(--pure-white); }
+.text-gray { color: rgba(15, 23, 42, 0.7); }
+.text-success { color: var(--accent-gold); }
+.text-danger { color: rgba(15, 23, 42, 0.8); }
+.text-warning { color: var(--accent-gold); }
 
 .bg-primary { background: var(--primary-navy); }
 .bg-accent { background: var(--accent-gold); }
-.bg-white { background: var(--jordan-white); }
-.bg-gray { background: var(--light-gray); }
-.bg-success { background: var(--success); }
-.bg-danger { background: var(--danger); }
-.bg-warning { background: var(--warning); }
+.bg-white { background: var(--pure-white); }
+.bg-gray { background: rgba(255, 215, 0, 0.1); }
+.bg-success { background: var(--accent-gold); }
+.bg-danger { background: rgba(15, 23, 42, 0.8); }
+.bg-warning { background: var(--accent-gold); }
 
 .border-primary { border-color: var(--primary-navy); }
 .border-accent { border-color: var(--accent-gold); }
-.border-white { border-color: var(--jordan-white); }
-.border-gray { border-color: var(--light-gray); }
+.border-white { border-color: var(--pure-white); }
+.border-gray { border-color: rgba(255, 215, 0, 0.1); }
 
 .shadow-soft { box-shadow: var(--soft-shadow); }
 .shadow-card { box-shadow: var(--card-shadow); }

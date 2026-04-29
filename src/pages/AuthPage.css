@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--primary-navy) 0%, #1e3a8a 50%, #3730a3 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1a2f4a 50%, #0F172A 100%);
   z-index: -1;
 }
 
@@ -28,7 +28,7 @@
   content: '';
   position: absolute;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 215, 0, 0.1);
   animation: pulse 4s infinite ease-in-out;
 }
 
@@ -64,8 +64,9 @@
   font-size: 3rem;
   opacity: 0.6;
   animation: float 20s infinite linear;
-  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.3));
+  filter: drop-shadow(0 4px 8px rgba(255, 215, 0, 0.3));
   z-index: 1;
+  color: #FFD700;
 }
 
 .plane-1 {
@@ -95,6 +96,7 @@
   animation: float 25s infinite linear;
   filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2));
   z-index: 1;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .cloud-1 {
@@ -160,12 +162,12 @@
 
 .auth-switcher {
   display: flex;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(15, 23, 42, 0.8);
   border-radius: 50px;
   padding: 5px;
   margin-bottom: 30px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
 .switch-btn {
@@ -177,7 +179,7 @@
   font-size: 1rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   min-width: 150px;
@@ -185,9 +187,9 @@
 }
 
 .switch-btn.active {
-  background: var(--jordan-white);
-  color: var(--primary-navy);
-  box-shadow: var(--card-shadow);
+  background: #ffffff;
+  color: #0F172A;
+  box-shadow: 0 12px 48px rgba(15, 23, 42, 0.2);
 }
 
 .switch-btn:hover:not(.active) {
@@ -222,37 +224,37 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 215, 0, 0.3);
   min-width: 160px;
   justify-content: center;
 }
 
 .quick-login-btn.traveler {
-  background: rgba(59, 130, 246, 0.2);
-  color: #93c5fd;
-  border-color: rgba(59, 130, 246, 0.3);
+  background: rgba(15, 23, 42, 0.8);
+  color: #ffffff;
+  border-color: rgba(255, 215, 0, 0.5);
 }
 
 .quick-login-btn.traveler:hover {
-  background: rgba(59, 130, 246, 0.3);
-  color: #dbeafe;
+  background: rgba(255, 215, 0, 0.9);
+  color: #0F172A;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 16px 64px rgba(15, 23, 42, 0.25);
 }
 
 .quick-login-btn.airline {
-  background: rgba(245, 158, 11, 0.2);
-  color: #fcd34d;
-  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffffff;
+  border-color: rgba(255, 215, 0, 0.5);
 }
 
 .quick-login-btn.airline:hover {
-  background: rgba(245, 158, 11, 0.3);
-  color: #fef3c7;
+  background: rgba(255, 215, 0, 0.9);
+  color: #0F172A;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 16px 64px rgba(15, 23, 42, 0.25);
 }
 
 .auth-form-container {
@@ -339,7 +341,7 @@
 
 /* تأثيرات إضافية */
 .auth-form-container {
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-switcher {

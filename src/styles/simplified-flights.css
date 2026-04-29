@@ -1,14 +1,14 @@
 /* تصميم مبسط وأنيق للرحلات */
 
 .flights-page {
-  background: var(--soft-gradient);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   min-height: 100vh;
   padding: 0;
 }
 
 .flights-header {
-  background: var(--primary-gradient);
-  color: var(--jordan-white);
+  background: linear-gradient(135deg, #0F172A 0%, #1a2f4a 100%);
+  color: #ffffff;
   padding: 40px 0;
   margin-bottom: 32px;
   position: relative;
@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="plane" patternUnits="userSpaceOnUse" width="100" height="100"><path d="M20,50 L80,50 M50,20 L50,80" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23plane)"/></svg>');
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="plane" patternUnits="userSpaceOnUse" width="100" height="100"><path d="M20,50 L80,50 M50,20 L50,80" stroke="rgba(255,215,0,0.3)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23plane)"/></svg>');
   opacity: 0.1;
 }
 
@@ -42,12 +42,12 @@
 /* بحث مبسط */
 .simple-search-container:hover {
   transform: translateY(-2px);
-  box-shadow: var(--hover-shadow);
+  box-shadow: 0 16px 64px rgba(15, 23, 42, 0.25);
 }
 
 .input-group .form-control:focus {
-  border-color: var(--jordan-gold);
-  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+  border-color: #FFD700;
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
 }
 
 /* فلاتر سريعة */
@@ -56,16 +56,16 @@
 }
 
 .quick-filters .form-select {
-  border: 2px solid #e2e8f0;
+  border: 2px solid rgba(255, 215, 0, 0.2);
   border-radius: 12px;
   padding: 12px 16px;
-  transition: var(--smooth-transition);
-  background: var(--jordan-white);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
 }
 
 .quick-filters .form-select:focus {
-  border-color: var(--jordan-gold);
-  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+  border-color: #FFD700;
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
   transform: translateY(-1px);
 }
 
@@ -76,8 +76,8 @@
 
 .simple-flight-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--hover-shadow);
-  border-color: var(--jordan-gold);
+  box-shadow: 0 16px 64px rgba(15, 23, 42, 0.25);
+  border-color: #FFD700;
 }
 
 /* حالة التحميل */
@@ -94,11 +94,11 @@
   width: 3rem;
   height: 3rem;
   border-width: 4px;
-  color: var(--jordan-gold);
+  color: #FFD700;
 }
 
 .loading-container p {
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 1.1rem;
   margin-top: 16px;
 }
@@ -107,24 +107,24 @@
 .no-results {
   text-align: center;
   padding: 80px 20px;
-  background: var(--jordan-white);
+  background: #ffffff;
   border-radius: 20px;
-  box-shadow: var(--soft-shadow);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
   margin: 32px 0;
 }
 
 .no-results .fa-plane-slash {
-  color: var(--jordan-stone);
-  opacity: 0.5;
+  color: #FFD700;
+  opacity: 0.7;
 }
 
 .no-results h4 {
-  color: var(--jordan-royal);
+  color: #0F172A;
   margin: 24px 0 16px;
 }
 
 .no-results p {
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 1.1rem;
   margin-bottom: 24px;
 }

@@ -2,7 +2,7 @@
 .create-flight-page {
   padding: 40px 20px;
   min-height: 100vh;
-  background: var(--soft-gradient);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .create-flight-header {
@@ -11,14 +11,14 @@
 }
 
 .create-flight-header h1 {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .create-flight-header p {
-  color: var(--jordan-stone);
+  color: rgba(15, 23, 42, 0.7);
   font-size: 1.1rem;
   opacity: 0.8;
 }
@@ -26,10 +26,10 @@
 .create-flight-form {
   max-width: 800px;
   margin: 0 auto;
-  background: var(--jordan-white);
+  background: #ffffff;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: var(--card-shadow);
+  box-shadow: 0 12px 48px rgba(15, 23, 42, 0.2);
 }
 
 .form-row {
@@ -45,7 +45,7 @@
 }
 
 .form-group label {
-  color: var(--jordan-royal);
+  color: #0F172A;
   font-weight: 600;
   margin-bottom: 8px;
   font-size: 0.9rem;
@@ -55,19 +55,19 @@
 .form-group select,
 .form-group textarea {
   padding: 12px 16px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid rgba(255, 215, 0, 0.2);
   border-radius: 12px;
   font-size: 1rem;
-  transition: var(--smooth-transition);
-  background: var(--jordan-white);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--jordan-gold);
-  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+  border-color: #FFD700;
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
   transform: translateY(-1px);
 }
 
@@ -79,38 +79,38 @@
 }
 
 .btn-submit {
-  background: var(--primary-gradient);
-  color: var(--jordan-white);
+  background: linear-gradient(135deg, #0F172A 0%, #1a2f4a 100%);
+  color: #ffffff;
   border: none;
   padding: 14px 32px;
   border-radius: 12px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--smooth-transition);
-  box-shadow: var(--soft-shadow);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
 }
 
 .btn-submit:hover {
   transform: translateY(-2px);
-  box-shadow: var(--hover-shadow);
+  box-shadow: 0 16px 64px rgba(15, 23, 42, 0.25);
 }
 
 .btn-reset {
-  background: var(--jordan-cream);
-  color: var(--jordan-stone);
-  border: 2px solid var(--jordan-sage);
+  background: rgba(255, 215, 0, 0.05);
+  color: rgba(15, 23, 42, 0.7);
+  border: 2px solid rgba(255, 215, 0, 0.2);
   padding: 14px 32px;
   border-radius: 12px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--smooth-transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-reset:hover {
-  background: var(--jordan-sage);
-  color: var(--jordan-white);
+  background: rgba(255, 215, 0, 0.2);
+  color: #0F172A;
   transform: translateY(-2px);
 }
 
@@ -123,15 +123,15 @@
 }
 
 .message.success {
-  background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
-  color: #2d5a2d;
-  border: 1px solid #9ae6b4;
+  background: linear-gradient(135deg, #FFD700 0%, #ffed4e 100%);
+  color: #0F172A;
+  border: 1px solid #FFD700;
 }
 
 .message.error {
-  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
-  color: #742a2a;
-  border: 1px solid #feb2b2;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(26, 47, 74, 0.8) 100%);
+  color: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.8);
 }
 
 .loading {
@@ -139,14 +139,14 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: var(--jordan-royal);
+  color: #0F172A;
 }
 
 .spinner {
   width: 20px;
   height: 20px;
-  border: 2px solid var(--jordan-cream);
-  border-top: 2px solid var(--jordan-gold);
+  border: 2px solid rgba(255, 215, 0, 0.05);
+  border-top: 2px solid #FFD700;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }

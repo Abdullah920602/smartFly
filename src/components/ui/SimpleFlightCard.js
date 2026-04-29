@@ -74,7 +74,7 @@ const SimpleFlightCard = ({ flight }) => {
       <div className="flight-footer d-flex justify-content-between align-items-center">
         <div className="price-info">
           <span style={{ 
-            color: 'var(--jordan-gold)', 
+            color: 'var(--jordan-black)', 
             fontSize: '20px', 
             fontWeight: '700' 
           }}>

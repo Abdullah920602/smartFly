@@ -3,12 +3,12 @@
 :root {
   /* SmartFly Premium 5-Color Palette */
   /* Main 5-Color Palette */
-  --primary-navy: #0f172a;      /* Deep Navy - Primary brand color */
-  --accent-gold: #f59e0b;       /* Vibrant Gold - Accent and highlights */
-  --soft-blue: #3b82f6;         /* Soft Blue - Secondary actions */
+  --primary-navy: #0F172A;      /* Deep Navy - Primary brand color */
+  --accent-gold: #fbbf24;       /* Vibrant Gold - Accent and highlights */
+  --soft-blue:#0F172A;         /* Soft Blue - Secondary actions */
   --light-gray: #f1f5f9;        /* Light Gray - Backgrounds */
   --dark-gray: #475569;         /* Dark Gray - Text and details */
-  
+  --black-full: #000000;         /* Black - Text and details */
   /* Legacy support (mapped to new palette) */
   --jordan-royal: var(--primary-navy);
   --jordan-gold: var(--accent-gold);
@@ -16,6 +16,7 @@
   --jordan-cream: var(--light-gray);
   --jordan-white: #ffffff;
   --jordan-stone: var(--dark-gray);
+  --jordan-black: var(--black-full);
   --danger: #dc3545;
   --success: #22c55e;
   
