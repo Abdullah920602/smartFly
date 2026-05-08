@@ -1,0 +1,155 @@
+/* Airlines Page Styles */
+.airlines-page {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: var(--soft-gradient);
+}
+
+.airlines-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.airlines-header h1 {
+  color: var(--jordan-royal);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.airlines-header p {
+  color: var(--jordan-stone);
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.airlines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.airline-card {
+  background: var(--jordan-white);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--card-shadow);
+  transition: var(--smooth-transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.airline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--primary-gradient);
+}
+
+.airline-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--hover-shadow);
+}
+
+.airline-logo {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.airline-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--jordan-royal);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.airline-name-en {
+  font-size: 1rem;
+  color: var(--jordan-stone);
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.airline-description {
+  color: var(--jordan-stone);
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.airline-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.airline-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: var(--jordan-cream);
+  border-radius: 12px;
+}
+
+.airline-detail-label {
+  font-size: 0.85rem;
+  color: var(--jordan-stone);
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+.airline-detail-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--jordan-royal);
+}
+
+.airline-website {
+  text-align: center;
+}
+
+.airline-website a {
+  color: var(--jordan-gold);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--smooth-transition);
+}
+
+.airline-website a:hover {
+  color: var(--jordan-royal);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .airlines-page {
+    padding: 20px 15px;
+  }
+  
+  .airlines-header h1 {
+    font-size: 2rem;
+  }
+  
+  .airlines-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .airline-card {
+    padding: 20px;
+  }
+  
+  .airline-details {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

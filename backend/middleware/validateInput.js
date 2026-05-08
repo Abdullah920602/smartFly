@@ -58,10 +58,6 @@ const validateFlight = [
     .trim()
     .notEmpty()
     .withMessage('رقم الرحلة مطلوب'),
-  body('airline')
-    .trim()
-    .notEmpty()
-    .withMessage('اسم الشركة مطلوب'),
   body('departure')
     .trim()
     .notEmpty()

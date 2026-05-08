@@ -5,8 +5,19 @@ const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 
 const generateToken = (user) => {
+  const tokenData = {
+    id: user._id, 
+    email: user.email, 
+    role: user.role
+  };
+  
+  // Add airlineId for airline users
+  if (user.role === 'airline' && user.airlineId) {
+    tokenData.airlineId = user.airlineId;
+  }
+  
   return jwt.sign(
-    { id: user._id, email: user.email, role: user.role },
+    tokenData,
     process.env.JWT_SECRET,
     { expiresIn: process.env.JWT_EXPIRE }
   );

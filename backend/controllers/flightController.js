@@ -7,7 +7,13 @@ exports.getFlights = async (req, res) => {
     let query = {};
 
     // If user is airline, only show their flights
-    if (req.user && req.user.role === 'airline' && req.user.airlineId) {
+    if (req.user && req.user.role === 'airline') {
+      if (!req.user.airlineId) {
+        return res.status(403).json({ 
+          success: false,
+          message: 'المستخدم غير مرتبط بشركة طيران' 
+        });
+      }
       query.airlineId = req.user.airlineId;
     }
 
@@ -64,7 +70,7 @@ exports.getFlightById = async (req, res) => {
 
 exports.addFlight = async (req, res) => {
   try {
-    const { flightNumber, airline, departure, arrival, departureTime, arrivalTime, date, duration, price, aircraft, availableSeats } = req.body;
+    const { flightNumber, departure, arrival, departureTime, arrivalTime, date, duration, price, aircraft, availableSeats } = req.body;
 
     // تحقق من أن المستخدم هو شركة طيران
     if (req.user.role !== 'airline') {
@@ -74,18 +80,35 @@ exports.addFlight = async (req, res) => {
       });
     }
 
-    // تحقق من وجود الرحلة
-    let existingFlight = await Flight.findOne({ flightNumber });
+    // تحقق من وجود airlineId
+    if (!req.user.airlineId) {
+      return res.status(403).json({ 
+        success: false,
+        message: 'المستخدم غير مرتبط بشركة طيران' 
+      });
+    }
+
+    // Get airline information
+    const airline = await Airline.findById(req.user.airlineId);
+    if (!airline) {
+      return res.status(404).json({ 
+        success: false,
+        message: 'شركة الطيران غير موجودة' 
+      });
+    }
+
+    // تحقق من وجود الرحلة (لنفس الرقم ونفس التاريخ)
+    let existingFlight = await Flight.findOne({ flightNumber, date });
     if (existingFlight) {
       return res.status(400).json({ 
         success: false,
-        message: 'رقم الرحلة موجود بالفعل' 
+        message: 'رقم الرحلة موجود بالفعل في هذا التاريخ' 
       });
     }
 
     const newFlight = new Flight({
       flightNumber,
-      airline,
+      airline: airline.name,
       airlineId: req.user.airlineId,
       departure,
       arrival,
